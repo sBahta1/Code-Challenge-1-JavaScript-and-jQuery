@@ -4,7 +4,6 @@ function readyNow() {
     console.log('JQ');
     $('#generatebtn').on('click', counterFunc)
     $('#generatebtn').on('click', clickFunc)
-    $('#swapBtn').on('click',swapFunc)
 }
 
 let clicks = 0
@@ -24,7 +23,7 @@ function clickFunc() {
     console.log(clicks);
 }
 
-$('#swapBtn').on('click',swapFunc)
+$('.container').on('click','#swapBtn', swapFunc);
 function swapFunc() {
    console.log("swappy");
 }//still need to connect swap button and delete button 
